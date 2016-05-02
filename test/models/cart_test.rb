@@ -5,18 +5,18 @@ class CartTest < ActiveSupport::TestCase
     @cart = carts(:one)
   end
 
-  it "should should stack products" do
+  test "should should stack products" do
 
     2.times do
       @product = products :ruby
       @cart.add_product(@product)
     end
 
-    assert @cart.line_items.length == 1
+    assert @cart.line_items.size == 1
 
     @product = products :ruby
     ruby_item = @cart.line_items.pop
-    assert ruby_item.total_price == 2 * product.price
+    assert ruby_item.total_price == 2 * @product.price
 
   end
 

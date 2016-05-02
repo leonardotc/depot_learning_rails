@@ -1,6 +1,14 @@
 # Read about fixtures at
 # http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
+
+one: 
+  title: Apple Macbook 13"
+  description: Great Aluminum macbook, used but not fugly
+  price: 990
+  image_url: http://lorempixel.com/80/60/technics/3/
+
+
 ruby: 
   title:       Programming Ruby 1.9
   description: 
@@ -12,7 +20,7 @@ ruby:
   price:       49.50
   image_url:   ruby.png 
 
-coffe_script: 
+coffee_script: 
   title:       CoffeeScript
   description: 
     Ruby is the fastest growing and most exciting dynamic

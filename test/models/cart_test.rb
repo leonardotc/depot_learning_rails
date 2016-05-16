@@ -5,7 +5,7 @@ class CartTest < ActiveSupport::TestCase
     @cart = carts(:one)
   end
 
-  it "should should stack products" do
+  test "should should stack products" do
 
     2.times do
       @product = products :ruby
